@@ -1,7 +1,7 @@
 import { StyleSheet, Image } from "react-native";
 
 const ImageViewer = ({ placeholderImageSource, selectedImage }) => {
-    const imageSource = selectedImage ? selectedImage : placeholderImageSource;
+    const imageSource = selectedImage ? { uri: selectedImage } : placeholderImageSource;
 
     return (
         <Image
